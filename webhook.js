@@ -15,10 +15,8 @@ app.use(express.static(path.join(srcPath, "public")));
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 // Create a new entry in the users table
 app.post("/webhook", urlencodedParser, function (request, response) {
-  
-  const STRING= JSON.stringify(response)
- console.log("RESPONSE" ,STRING);
- bot.telegrambot(STRING);
+   console.log("RESPONSE" ,request.toString());
+//  bot.telegrambot(STRING);
  
 });
 
