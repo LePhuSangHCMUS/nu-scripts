@@ -17,10 +17,12 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.post("/webhook", urlencodedParser, function(request, response) {
 //  console.log("REQUEST" ,request.body.payload);
 //  console.log("RESPONSE" ,response.body);
-  const payload = request.body.payload.after;
- console.log("RESPONSE" ,payload);
+  const datString = request.body.payload.after;
+  const data = JSON.parse(datString);
+  const res = data.before;
+ console.log("RESPONSE" ,res);
   
- bot.telegrambot(payload);
+ bot.telegrambot(res);
  
 });
 
