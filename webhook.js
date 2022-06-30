@@ -18,7 +18,7 @@ app.post("/webhook", urlencodedParser, function(request, response) {
  
 });
 
-const bot =require("./telegram-bot")
+const bot = require("./telegram-bot");
 
 // Serve the root url: http://expressjs.com/en/starter/basic-routing.html
 app.get("/", function(request, response) {
@@ -28,7 +28,7 @@ app.get("/", function(request, response) {
 app.post("/webhook", urlencodedParser, function(request, response) {
   console.log("REQUEST" ,request);
   console.log("RESPONSE", response);
-  bot.telegrambot(request)
+  bot.telegrambot("request")
   
  });
 // Listen on port 8080
