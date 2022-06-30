@@ -19,8 +19,6 @@ const telegrambot = (message ="Okay", json) => {
   }
 }
 
-telegrambot()
-
 const ACTIONS = {
   NEW_USER: '🙋‍♂️new user',
   NEW_MONITOR: '🖥 new monitor',

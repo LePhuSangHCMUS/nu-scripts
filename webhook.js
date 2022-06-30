@@ -28,7 +28,9 @@ app.get("/", function(request, response) {
 app.post("/webhook", urlencodedParser, function(request, response) {
   console.log("REQUEST" ,request);
   console.log("RESPONSE", response);
-  bot.telegrambot("request")
+  bot.telegrambot("request");
+  console.log('ACTION',bot.ACTIONS);
+  
   
  });
 // Listen on port 8080
