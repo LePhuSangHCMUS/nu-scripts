@@ -18,7 +18,6 @@ const telegrambot = (message ="Okay", json) => {
     console.log('Something went wrong when trying to send a Telegram notification', err);
   }
 }
-
 const ACTIONS = {
   NEW_USER: '🙋‍♂️new user',
   NEW_MONITOR: '🖥 new monitor',
