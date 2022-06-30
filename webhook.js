@@ -14,9 +14,11 @@ app.use(express.static(path.join(srcPath, "public")));
 // Use bodyParser to parse application/x-www-form-urlencoded form data
 var urlencodedParser = bodyParser.urlencoded({ extended: false });
 // Create a new entry in the users table
-app.post("/webhook", urlencodedParser, function(request, response) {
- console.log("RESPONSE" ,response.body);
- bot.telegrambot(response.body);
+app.post("/webhook", urlencodedParser, function (request, response) {
+  
+  const STRING= JSON.stringify(response)
+ console.log("RESPONSE" ,STRING);
+ bot.telegrambot(STRING);
  
 });
 
