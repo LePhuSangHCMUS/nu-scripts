@@ -17,7 +17,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.post("/webhook", urlencodedParser, function(request, response) {
 //  console.log("REQUEST" ,request.body.payload);
 //  console.log("RESPONSE" ,response.body);
-  const datString = request.body.payload.after;
+  const datString = request.body.payload;
   const data = JSON.parse(datString);
   const res = data.before;
  console.log("RESPONSE" ,res);
