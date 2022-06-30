@@ -17,7 +17,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false });
 app.post("/webhook", urlencodedParser, function(request, response) {
  console.log("REQUEST" ,request);
  console.log("RESPONSE" ,response);
-//  bot.telegrambot("request");
+ bot.telegrambot("request");
  
 });
 
