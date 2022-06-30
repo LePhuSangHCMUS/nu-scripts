@@ -19,7 +19,7 @@ app.post("/webhook", urlencodedParser, function(request, response) {
 //  console.log("RESPONSE" ,response.body);
   const datString = request.body.payload;
   const data = JSON.parse(datString);
-  const res = data.commits;
+  const res = data.commits[0].message;
  console.log("RESPONSE" ,res);
   
  bot.telegrambot(res);
