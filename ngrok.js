@@ -17,8 +17,4 @@ const connection = async () => {
     console.log('URL',url);
     
 }
-
-console.log('Dang');
-
-
 connection();
