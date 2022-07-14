@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start:regex": "nodemon regex"
   },
   "repository": {
     "type": "git",
@@ -18,8 +19,11 @@
   "homepage": "https://github.com/LePhuSangHCMUS/nu-scripts#readme",
   "dependencies": {
     "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
     "express": "^4.18.1",
+    "express-static-gzip": "^2.1.7",
     "ngrok": "^4.3.1",
-    "node-telegram-bot-api": "^0.58.0"
+    "node-telegram-bot-api": "^0.58.0",
+    "nodemon": "^2.0.19"
   }
 }

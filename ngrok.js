@@ -1,9 +1,9 @@
 const ngrok = require('ngrok');
-
+const PORT = 8000;
 const connection = async () => {
     const url = await ngrok.connect({
         proto: 'http', // http|tcp|tls, defaults to http
-        addr: 8080, // port or network address, defaults to 80
+        addr: PORT, // port or network address, defaults to 80
         // auth: 'user:pwd', // http basic authentication for tunnel
         // subdomain: 'alex', // reserved tunnel name https://alex.ngrok.io
         authtoken: '2BHPntMU2XV54mlMGYugcrWLEYV_6YRykQfBWYwMsKUUhvzr7', // your authtoken from ngrok.com
